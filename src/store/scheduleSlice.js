@@ -1,42 +1,4 @@
-import { 
-    SET_SCHEDULE_PROPERTIES, 
-    ADD_SCHEDULE_ITEM,
-    REMOVE_SCHEDULE_ITEM, 
-    TOGGLE_THEME } from './actions.js';
-
-const permanentTheme = {
-    navHeight: '6vh',
-}
-const darkModeTheme = {
-    name: 'DARK_MODE',
-    fontColor: "#DDDDDD",
-    textShadowColor: "#111111",
-    mainAccent: "#5555FF",
-    backgroundColor: "#222222",
-    scheduleBackgroundColor: '#222222',
-}
-const lightModeTheme = {
-    name: 'LIGHT_MODE',
-    fontColor: "#222222",
-    textShadowColor: "#EEEEEE",
-    mainAccent: "#FF5555",
-    backgroundColor: "#DDDDDD",
-    scheduleBackgroundColor: '#DDDDDD',
-}
-
-export const ThemeReducer = (state = { ...permanentTheme, ...darkModeTheme }, action) => {
-    const {type, payload} = action;
-
-    switch(type) {
-        case TOGGLE_THEME: {
-            return (state.name == 'DARK_MODE')? 
-            { ...permanentTheme, ...lightModeTheme }:
-            { ...permanentTheme, ...darkModeTheme };
-        }
-        default:
-            return state;
-    }
-}
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialScheduleState = {
     items: [
@@ -81,42 +43,48 @@ const initialScheduleState = {
     ],
     properties: {
         interval: 1,
-        scale: 5,
+        scale: 6,
         dayStart: 8,
         dayEnd: 18,
     }
 };
-export const ScheduleReducer = (state=initialScheduleState, action) => {
-    const {type, payload} = action;
-    
-    switch(type) {
-        case SET_SCHEDULE_PROPERTIES: {
-            const {name, value} = payload;
+
+export const scheduleSlice = createSlice({
+    name: 'schedule',
+    initialState: {
+        ...initialScheduleState
+    },
+    reducers: {
+        setScheduleProperties: (state, action) => {
+            const {name, value} = action.payload;
             return {
                 ...state,
                 properties: {
                     ...state.properties,
                     [name]: value
                 }
-            };
-        }
-        case ADD_SCHEDULE_ITEM: {
+            }
+        },
+        addScheduleItem: (state, action) => {
             return {
                 ...state,
                 items: [
                     ...state.items,
-                    payload
+                    action.payload
                 ]
             }
-        }
-        case REMOVE_SCHEDULE_ITEM: {
-            const items = state.items.filter((item) => payload !== item.id)
+        },
+        removeScheduleItem: (state, action) => {
+            const items = state.items.filter((item) => action.payload !== item.id)
             return {
                 ...state,
                 items
             }
         }
-        default:
-            return state;
     }
-}
+});
+
+export const selectItems = (state) => state.schedule.items;
+export const selectProperties = (state) => state.schedule.properties;
+export const { setScheduleProperties, addScheduleItem, removeScheduleItem } = scheduleSlice.actions;
+export default scheduleSlice.reducer;

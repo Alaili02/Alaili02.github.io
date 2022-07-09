@@ -1,8 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import styled from 'styled-components';
 import { Button } from '../PrimaryStyles.js';
-import { toggleTheme } from '../../store/actions.js';
+import { toggleTheme } from '../../store/themeSlice.js';
 
 const ThemeButton = ( {onToggleThemePressed, children} ) => {
     return (

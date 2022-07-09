@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -32,6 +31,7 @@ export const Button = styled.button`
     border: 2px solid ${props => props.theme.mainAccent};
 
     transition: border-color 0.2s ease;
+    transition: background-color 0.2s ease;
     :hover {
         color: ${props => props.theme.fontColor};
         border: 2px solid ${props => props.theme.fontColor};

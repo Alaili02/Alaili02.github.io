@@ -5,11 +5,13 @@ import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
 
 import thunk from 'redux-thunk';
-import { ScheduleReducer, ThemeReducer } from './reducers.js';
+
+import ScheduleReducer from './scheduleSlice.js';
+import ThemeReducer from './themeSlice.js';
 
 const rootReducer = combineReducers({ 
     schedule: ScheduleReducer, 
-    theme: ThemeReducer 
+    theme: ThemeReducer,
 });
 
 const persistConfig = {
