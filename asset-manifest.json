@@ -1,14 +1,14 @@
 {
-  "main.js": "/static/js/main.bb2ec824.chunk.js",
-  "main.js.map": "/static/js/main.bb2ec824.chunk.js.map",
+  "main.js": "/static/js/main.e158ac34.chunk.js",
+  "main.js.map": "/static/js/main.e158ac34.chunk.js.map",
   "static/js/1.6d901b3e.chunk.js": "/static/js/1.6d901b3e.chunk.js",
   "static/js/1.6d901b3e.chunk.js.map": "/static/js/1.6d901b3e.chunk.js.map",
-  "static/js/2.a15fb2ad.chunk.js": "/static/js/2.a15fb2ad.chunk.js",
-  "static/js/2.a15fb2ad.chunk.js.map": "/static/js/2.a15fb2ad.chunk.js.map",
+  "static/js/2.e22888d7.chunk.js": "/static/js/2.e22888d7.chunk.js",
+  "static/js/2.e22888d7.chunk.js.map": "/static/js/2.e22888d7.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.2600f86d.js",
   "runtime~main.js.map": "/static/js/runtime~main.2600f86d.js.map",
   "static/media/Sticker_App_Cen_01.png": "/static/media/Sticker_App_Cen_01.9b943f42.png",
   "index.html": "/index.html",
-  "precache-manifest.c6e368cd9f8d594afeda5a1cedef3e4d.js": "/precache-manifest.c6e368cd9f8d594afeda5a1cedef3e4d.js",
+  "precache-manifest.e9f9ee83437177fa1f333bcc8715f678.js": "/precache-manifest.e9f9ee83437177fa1f333bcc8715f678.js",
   "service-worker.js": "/service-worker.js"
 }

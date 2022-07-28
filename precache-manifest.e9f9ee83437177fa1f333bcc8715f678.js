@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "bb2ec82430af7b3ba25c",
-    "url": "/static/js/main.bb2ec824.chunk.js"
+    "revision": "e158ac3414733aa43eff",
+    "url": "/static/js/main.e158ac34.chunk.js"
   },
   {
     "revision": "6d901b3e33806cc9ca52",
     "url": "/static/js/1.6d901b3e.chunk.js"
   },
   {
-    "revision": "a15fb2ad9ce52daa3156",
-    "url": "/static/js/2.a15fb2ad.chunk.js"
+    "revision": "e22888d7be0b0b928027",
+    "url": "/static/js/2.e22888d7.chunk.js"
   },
   {
     "revision": "2600f86dfe95919d6557",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/static/media/Sticker_App_Cen_01.9b943f42.png"
   },
   {
-    "revision": "5587e718d9486ebfdc0b446939d019c9",
+    "revision": "02366da9b779853ef089fac413b61492",
     "url": "/index.html"
   }
 ];
