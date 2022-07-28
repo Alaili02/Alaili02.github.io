@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "70abcfa4f6850c05f734",
-    "url": "/static/js/main.70abcfa4.chunk.js"
+    "revision": "bb2ec82430af7b3ba25c",
+    "url": "/static/js/main.bb2ec824.chunk.js"
   },
   {
     "revision": "6d901b3e33806cc9ca52",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/static/media/Sticker_App_Cen_01.9b943f42.png"
   },
   {
-    "revision": "9b644621fc91012fc0f03445fed8880f",
+    "revision": "5587e718d9486ebfdc0b446939d019c9",
     "url": "/index.html"
   }
 ];
